@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Hide YouTube Comments",
+    "version": "0.0.0",
+    "description": "Hide YouTube comments and live streaming chat",
+    "icons": {
+        "48": "icons/icon-48.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://www.youtube.com/*"
+            ],
+            "js": [
+                "hide-comments.js"
+            ]
+        }
+    ]
+}
